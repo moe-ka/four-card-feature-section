@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --color-Red: hsl(0, 78%, 62%);
+  --color-Cyan: hsl(180, 62%, 55%);
+  --color-Orange: hsl(34, 97%, 64%);
+  --color-Blue: hsl(212, 86%, 64%);
+  --color-Very-Dark-Blue-tl-cdtl: hsl(234, 12%, 34%);
+  --color-Grayish-Blue-pr-detl-des: hsl(229, 6%, 66%);
+  --color-VeryLightGray-bgbody: hsl(0, 0%, 98%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: var(--color-VeryLightGray-bgbody);
+  padding-top: 4rem;
+}
+
+.wrapper-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-title .title {
+  color: var(--color-Grayish-Blue-pr-detl-des);
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+.wrapper-title .title span {
+  color: var(--color-Very-Dark-Blue-tl-cdtl);
+  font-weight: 600;
+}
+.wrapper-title .descript {
+  color: var(--color-Grayish-Blue-pr-detl-des);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  max-width: 474px;
+  align-self: center;
+}
+
+.wrapper-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.wrapper-card .card {
+  max-width: 350px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.wrapper-card .card .cd-title {
+  color: var(--color-Very-Dark-Blue-tl-cdtl);
+  margin-bottom: 0.5rem;
+}
+.wrapper-card .card .cd-detail {
+  color: var(--color-Grayish-Blue-pr-detl-des);
+  margin-bottom: 2rem;
+}
+.wrapper-card .card img {
+  display: block;
+  margin-left: auto;
+}
+.wrapper-card .card.supervisor {
+  border-top: 0.3rem solid var(--color-Cyan);
+}
+.wrapper-card .card.team-builder {
+  border-top: 0.3rem solid var(--color-Red);
+}
+.wrapper-card .card.karma {
+  border-top: 0.3rem solid var(--color-Orange);
+}
+.wrapper-card .card.calculator {
+  border-top: 0.3rem solid var(--color-Blue);
+}
+
+.middle .karma {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 56.25rem) {
+  .container {
+    margin: 1.5rem;
+  }
+  .wrapper-card {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 1.563rem;
+  }
+}
+
+/*# sourceMappingURL=main_styles.css.map */
